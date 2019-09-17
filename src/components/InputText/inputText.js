@@ -1,11 +1,6 @@
 import React from "react";
 
 class InputText extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { name: "" };
-  }
-
   render() {
     const { label, placeholder, id, onChange } = this.props;
 

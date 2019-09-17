@@ -9,11 +9,6 @@ import {
 } from "../../constants/RobotTypes";
 
 class Dropdown extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { type: "" };
-  }
-
   render() {
     const { label, id, onChange } = this.props;
 
