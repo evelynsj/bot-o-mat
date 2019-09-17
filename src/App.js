@@ -1,8 +1,9 @@
 import React from 'react';
+import InputForm from './components/InputForm/InputForm'
 
 function App() {
   return (
-    <h1>Hello</h1>
+    <InputForm />
   );
 }
 
