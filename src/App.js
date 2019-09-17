@@ -1,10 +1,8 @@
-import React from 'react';
-import InputForm from './components/InputForm/inputForm'
+import React from "react";
+import InputForm from "./components/InputForm/inputForm";
 
 function App() {
-  return (
-    <InputForm />
-  );
+  return <InputForm />;
 }
 
 export default App;
