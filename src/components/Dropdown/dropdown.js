@@ -9,13 +9,22 @@ import {
 } from "../../constants/RobotTypes";
 
 class Dropdown extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { type: "" };
+  }
+
+  onChangeHandler = e => {
+    this.setState({ type: e.target.value });
+  };
+
   render() {
     const { label, id } = this.props;
 
     return (
       <div>
-        <label for={id}>{label}</label>
-        <select id={id}>
+        <label htmlFor={id}>{label}</label>
+        <select id={id} onChange={this.onChangeHandler}>
           <option>{UNIPEDAL}</option>
           <option>{BIPEDAL}</option>
           <option>{QUADRUPEDAL}</option>
