@@ -6,12 +6,8 @@ class InputText extends React.Component {
     this.state = { name: "" };
   }
 
-  onChangeHandler = e => {
-    this.setState({ name: e.target.value });
-  };
-
   render() {
-    const { label, placeholder, id } = this.props;
+    const { label, placeholder, id, onChange } = this.props;
 
     return (
       // TODO: Take care of enter key
@@ -19,7 +15,7 @@ class InputText extends React.Component {
         <label htmlFor={id}>{label}</label>
         <input
           type="text"
-          onChange={this.onChangeHandler}
+          onChange={onChange}
           placeholder={placeholder}
           id={id}
         />

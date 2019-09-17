@@ -14,17 +14,13 @@ class Dropdown extends React.Component {
     this.state = { type: "" };
   }
 
-  onChangeHandler = e => {
-    this.setState({ type: e.target.value });
-  };
-
   render() {
-    const { label, id } = this.props;
+    const { label, id, onChange } = this.props;
 
     return (
       <div>
         <label htmlFor={id}>{label}</label>
-        <select id={id} onChange={this.onChangeHandler}>
+        <select id={id} onChange={onChange}>
           <option>{UNIPEDAL}</option>
           <option>{BIPEDAL}</option>
           <option>{QUADRUPEDAL}</option>
