@@ -16,7 +16,7 @@ class InputText extends React.Component {
     return (
       // TODO: Take care of enter key
       <form>
-        <label>{label}</label>
+        <label for={id}>{label}</label>
         <input
           type="text"
           onChange={this.onChangeHandler}
