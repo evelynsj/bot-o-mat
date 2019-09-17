@@ -1,5 +1,5 @@
 import React from "react";
-import InputText from "../InputText/InputText";
+import InputText from "../InputText/inputText";
 
 class InputForm extends React.Component {
   render() {
